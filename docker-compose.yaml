@@ -11,7 +11,7 @@ services:
     ia-web:
         build:
             context: .
-            dockerfile: Dockerfile
+            dockerfile: dockerfile
         restart: always
         container_name: ia-web
         networks:
