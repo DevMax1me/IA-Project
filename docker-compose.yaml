@@ -18,9 +18,9 @@ services:
             - default
         labels:
             - "traefik.enable=true"
-            - "traefik.http.routers.zabbix.rule=Host(`ia.maximebadin.fr`)"
-            - "traefik.http.routers.zabbix.tls.certresolver=letsencrypt"
-            - "traefik.http.services.zabbix.loadbalancer.server.port=8501"
+            - "traefik.http.routers.ia.rule=Host(`ia.maximebadin.fr`)"
+            - "traefik.http.routers.ia.tls.certresolver=letsencrypt"
+            - "traefik.http.services.ia.loadbalancer.server.port=8501"
             - "traefik.docker.network=traefik-network"
 networks:
     default:
