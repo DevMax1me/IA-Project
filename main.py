@@ -8,7 +8,7 @@ import numpy as np
 import cv2
 
 # load model.ckpt
-model = keras.models.load_model("maxime-V11.h5")
+model = keras.models.load_model("maxime-V13.h5")
 
 st.header("Draw a number")
 st.subheader("Draw a number between 0 and 9")
