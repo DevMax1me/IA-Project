@@ -1,4 +1,4 @@
-FROM python:3.11-slim
+FROM python:3.9-slim
 
 WORKDIR /app
 
@@ -17,4 +17,4 @@ EXPOSE 8501
 
 HEALTHCHECK CMD curl --fail http://localhost:8501
 
-ENTRYPOINT ["streamlit", "run", "main.py"]
+ENTRYPOINT ["streamlit", "run", "main.py", "--server.port=8501", "--server.address=https://ia.maximebadin.fr", "--server.enableCORS false", "--server.enableXsrfProtection=false"]
